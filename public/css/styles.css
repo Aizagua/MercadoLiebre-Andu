@@ -1,0 +1,290 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+
+header {
+    background-color: #EAC926;
+}
+
+.input{
+    justify-content: center;
+    width: 100%;
+}
+
+.lupa{
+    justify-content: center;
+    width: 20%;
+}
+
+header p {
+    text-align: center;
+}
+
+header nav ul li a {
+    font-size: 12px;
+    text-decoration: none;
+    color: #000;
+    width: 100%;
+}
+
+header nav ul li {
+    list-style-type: none;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+}
+
+header nav ul{
+    margin: bottom 0;
+    display: none;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+header div.burger-menu i {
+    color: #FFF;
+    background-color: #1259c3;
+    padding: 10px;
+    margin: 10px 0px 20px 0px;
+    border-radius: 5px;
+}
+
+header div.burger-menu {
+    text-align: center;
+}
+
+header div a {
+    width: 50%;
+    padding: 10px;
+}
+
+.top-header {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5%;
+}
+
+.logo {
+    width: 100%;
+
+}
+
+.buscador {
+    width: 50%;
+    padding: 5px;
+    display: flex;
+}
+
+.buscador form {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+main section header h2 {
+    font-size: 24px;
+}
+
+main section p {
+    font-size: 16px;
+}
+
+.precio {
+    font-size: 18px;
+    width: 30%;
+}
+
+.descuento {
+    color: #39b54a;
+}
+
+
+main section div article img {
+    width: 100%;
+}
+
+footer section {
+    text-align: center;
+    margin-bottom: 100px;
+    padding-top: 5px;
+}
+
+footer section p {
+    color: #666;
+    margin: 5px 0px 5px 0px; 
+}
+
+footer section i {
+    color: #1259c3;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+footer {
+    border: 1px solid black;
+    background-color: white;
+}
+
+footer .copyright {
+    color: #ebebeb;
+}
+
+main {
+    margin: 0 auto;
+    width: 100vw;
+}
+
+header {
+    width: 99vw;
+    overflow: hidden;
+}
+
+.banner {
+    width: 99vw;
+    margin-bottom: -5px;
+    overflow: hidden;
+}
+
+main section {
+    margin-bottom: 10px;
+}
+
+main section article {
+    border: solid 1px #ebebeb;
+    margin-top: 5px;
+    transition: all 0.5s;
+}
+
+.info-article {
+    border-top: solid 1px #ebebeb;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: white;
+}
+
+main section article div i{
+    color: #39b54a;
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    transition: all 0.5s;
+}
+
+main section article div p b {
+    display: none;
+}
+
+#formulario-registro{
+    background-color: #ebebeb;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.formulario div {
+    margin-bottom: 10px;
+    border-radius: 2%;
+    width: 100%;
+    text-align: center;
+}
+
+.text-field {
+    padding: 5px;
+}
+
+.selecciones{
+    display: flex;
+    flex-direction: column;
+}
+
+.botonForm{
+    width: 100px;
+    height: 20px;
+}
+
+.botonSubmit{
+    background-color: green;
+    color: #ebebeb;
+    width: 40%;
+}
+
+.botonReset{
+    background-color: red;
+    color: #ebebeb;
+    width: 40%;
+}
+
+.descripcion b{
+    transition: all 10s;
+}
+
+
+@media (min-width: 361px) {
+    .producto{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    main section article div p b {
+        display: block;
+    }
+    main section article {
+        width: 45%;
+    }
+    header nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    header nav div{
+        display: none
+    }
+    header nav ul{
+        display: flex;
+    }
+}
+
+@media (min-width: 769px) {
+    main section article {
+        width: 22.5%;
+    }
+    main {
+        max-width: 95%;
+    }
+    .descripcion{
+        display: none;
+    }
+    article:hover .descripcion {
+        display: inline-block;
+    }
+    article:hover {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    article:hover i {
+        transform: rotate(-90deg);
+    }
+}
